@@ -1,1 +1,6 @@
 
+# Multi-Region KMS key
+creation_rules:
+  - path_regex: \.yaml$
+    kms: 'arn:aws:kms:us-east-1:895699933632:key/mrk-b3b51eeda8dc4ba5a69e4ec6e3444b05'
+    unencrypted_regex: ^(name)$
