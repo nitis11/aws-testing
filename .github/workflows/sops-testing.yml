@@ -36,10 +36,11 @@ jobs:
       
         run: |
       - uses: actions/setup-python@v2
-            with:
+        with:
           python-version: 3
+      - name: install
+        run: |
           pip install boto3 requests pyjwt
-          aws --version
           pip show boto3
           
           
