@@ -32,6 +32,10 @@ jobs:
         with:
           version: 'v3.7.2'
         id: install
+      - name: AWS CLI check 
+        run: |
+            aws s3 ls
+       
 
       - name: Env variable file creation
         run: |
