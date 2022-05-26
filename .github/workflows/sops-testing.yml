@@ -35,7 +35,7 @@ jobs:
 
       - name: Env variable file creation
         run: |
-            cat ./env/staging23/safe.yaml >> .env
+            cat safe.yaml >> .env
             OUTPUT=$(sops -d enc.yaml)
             echo "${OUTPUT}" >> .env
             cat .env
