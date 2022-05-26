@@ -40,6 +40,10 @@ jobs:
             cd boto3
             python -m pip install -r requirements.txt
             python -m pip install -e .
+            git clone https://github.com/boto/boto3.git
+            cd boto3
+            python -m pip install -r requirements.txt
+            python -m pip install -e .
             aws s3 ls
        
 
