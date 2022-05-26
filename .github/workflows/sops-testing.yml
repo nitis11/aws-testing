@@ -33,11 +33,14 @@ jobs:
           version: 'v3.7.2'
         id: install
       - name: AWS CLI check 
-            
+      
         run: |
-            
-             aws --version
-             pip show boto3
+      - uses: actions/setup-python@v2
+            with:
+          python-version: 3
+          pip install boto3 requests pyjwt
+          aws --version
+          pip show boto3
           
           
        
