@@ -35,6 +35,8 @@ jobs:
       - name: AWS CLI check 
         env:
           AWS_DEFAULT_REGION: 'us-east-1'
+          AWS_ACCESS_KEY_ID: 'AKIA5BC7ALHABFFQODWL'
+          AWS_SECRET_ACCESS_KEY: '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'
             
         run: |
             aws s3 ls
