@@ -34,9 +34,7 @@ jobs:
         id: install
       - name: AWS CLI check 
         env:
-            AWS_ACCESS_KEY_ID: '${{ secrets.SECRET_ACCESS_KEY }}'
-            AWS_SECRET_ACCESS_KEY: '${{ secrets.SECRET_ACCESS_KEY_VALUE }}'
-            AWS_DEFAULT_REGION: 'us-east-1'
+          AWS_DEFAULT_REGION: 'us-east-1'
             
         run: |
             aws s3 ls
