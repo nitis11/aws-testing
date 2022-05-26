@@ -1,1 +1,314 @@
 
+# ENVIRONMENT
+NODE_ENV=development
+
+
+
+# JWT
+JWT_SECRET=secret
+BEARER_TOKEN_EXPIRATION_DURATION=7days
+BEARER_TOKEN_EXPIRATION_DURATION_TEMP=60days
+BEARER_TOKEN_EXPIRATION_DURATION_FOR_KIOSK=100years
+
+#password pattern
+PASSWORD_PATTERN=^(?=.*[a-z])(?=.*[A-Z])(?=.*[~`!@#$%^&*()_+={}\:;'<>",.\-\[\]\/\\?])(?=.*[0-9])[a-zA-Z0-9~`!@#$%^&*()_+={}\:;'<>",.\-\[\]\/\\?]{12,}$
+
+
+
+#Test Twilio Configuration
+TWILIO_APPLICATION_SID=sample
+TWILIO_ACCOUNT_SID=AC2889c2d8081e757c9a4b290b5d8c427b
+
+
+#Twilio Default
+TWILIO_APPEND_CODE=+1
+TWILIO_SMS_FROM=+17739748856
+
+#Twilio US
+TWILIO_APPEND_CODE_US=+1
+TWILIO_FROM_US=+17739748856
+
+#Twilio Canada
+TWILIO_APPEND_CODE_CAN=+1
+TWILIO_FROM_CAN=+16479315810
+
+#Google API KEY
+GOOGLE_API_KEY=AIzaSyB96v0RI77d-oCDCmwiqh9kX4rTGU2uczQ
+
+#Weather API KEY
+WEATHER_API_KEY=3c2776c1af79f5dae5b5697bfa5e7590
+
+#Elastic API KEY (FAKE)
+ELASTIC_API_KEY=test
+
+#Firebase
+FIREBASE_JSON_PATH=/home/ubuntu/Rise_Ionic/server/constants/firebase-adminsdk.json
+FIREBASE_API_KEY=AIzaSyDCBA4L6yYmv8693zLJBBMtxih68xE0cvE
+FIREBASE_MESSAGING_SENDER_ID=1010737517329
+APPS_FIREBASE_SDKS_DIR=/home/ubuntu/Rise_Ionic/server/constants/fcm-app-sdks/
+FIREBASE_SDKS_APP_LIMIT = 30
+RISE_BOOKING_FIREBASE_JSON_PATH=/home/ubuntu/Rise_Ionic/server/constants/rise-official-firebase-adminsdk.json
+
+#Stripe Gateway Configuration
+STRIPE_PUBLISHABLE_KEY=pk_test_3oeF5sv2G6Y2FV8fUzqSIiU2
+STRIPE_WEBHOOK_SIGNING_SECRET_KEY=whsec_5tx4Jcsk7IivPiakFRPc2XAQzOhXEaNx
+
+#PUBNUB
+PUBNUB_PUBLISH_KEY=pub-c-1c2b67bd-4de1-4595-b19b-fc1b8a8a7bf3
+PUBNUB_SUBSCRIBE_KEY=sub-c-5cf5f920-428e-11e9-a392-82c902cb1324
+
+#Pass URL
+PASS_URL=https://staging23.risebuildings.com
+
+#Server URL
+SERVER_URL=https://staging23.risebuildings.com
+PARTNER_PORTAL_URL=https://staging23.risebuildings.com/vendor
+
+#Sentry IO
+SENTRY_DSN=
+
+#Nodemailer (Test emails)
+NODEMAILER_USERNAME=annamae.rodriguez94@ethereal.email
+NODEMAILER_PASSWORD=zWEm5dfHgpKRH1e4Yg
+
+
+PARTNER_PORTAL_URL=https://staging23.risebuildings.com/vendor
+
+BOOKING_PORTAL_URL=https://staging23.risebuildings.com/booking-portal/
+
+RISE_PORTAL_URL=https://staging23.risebuildings.com
+
+SPACE_WEB_PAGE_BASE_URL=https://staging23.risebuildings.com/booking-portal
+
+#HID Configuration
+HID_AUTH_URL=https://idp.hidglobal.com/idp/SISDOMAIN/authn/token
+HID_MA_BASE_URL=https://ma.api.assaabloy.com/credential-management/customer
+HID_MEDIA_TYPE=application/vnd.assaabloy.ma.credential-management-1.0+json
+
+#HID_AUTH_URL=https://test.idp.hidglobal.com/idp/SISDOMAIN/authn/token
+#HID_MA_BASE_URL=https://test-ma.api.assaabloy.com/credential-management/customer
+#HID_MEDIA_TYPE=application/vnd.assaabloy.ma.credential-management-1.0+json
+
+
+CORS_ORIGINS=localhost:\d+,\.riseliving\.com,\.riseoffice\.co,\.risebuildings\.com
+
+#VingCard Configuration
+VING_CARD_URL=https://onboarding.credential-services.api.assaabloy.com
+
+#Plaid Integration
+PLAID_CLIENT_ID=5ccc6c8879118c001287ed06
+PLAID_PUBLIC_KEY=b544a3310773e34875e77d3b842fc9
+PLAID_ENV='sandbox'
+
+#Salto Configuration (Sandbox)
+SALTO_CLIENT_ID=ae13dbd7-e108-11e8-8b4e-000d3a46a880
+SALTO_IDENTITY_SERVER_URL=https://clp-accept-identityserver.my-clay.com
+SALTO_CLAY_API_BASE_URL=https://clp-accept-user.my-clay.com/v1.1
+
+#Salto Configuration (Prod)
+#SALTO_CLIENT_ID=e815dab0-46c7-11ea-80a1-000d3a46ad5a
+#SALTO_CLIENT_SECRET=b63e9a76-46c7-11ea-b0f1-000d3a46a880
+#SALTO_IDENTITY_SERVER_URL=https://identity.my-clay.com
+#SALTO_CLAY_API_BASE_URL=https://connect.my-clay.com/v1.1
+#SALTO_APP_KEY=MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEkGIqR7bC6cpt9DbMfFt8FpP1BEtlfbgayuMwMhXRrk1bRidhJXcGVvjocuol7xudJ8rWMNJr4sbhoTW3/KprhA==
+
+
+#Social post Configuration
+#Twitter
+TWITTER_API=qvFcZn89tj9CLgkFrUHfmE9tL
+
+#FB_CONFIG
+FB_APP_ID=2241104172647872
+FB_ACCESS_TOKEN=EAAf2RbodhcABAJHbd8BAqWeUYHPZAEgaIPc0dcHw9ZAKcqPi4LqdOATEkHnTYCYAsuzKiYxRElskMdKcsZC8qUTwZBsEnu2F0QStOUXVwu00m2EGhxTqCBbRgZCDmF5Grs8EiR9libZBMPc0KPjmhiEArKnoFAEIeWKK5ZBxzaU3bG3wJ9RQ2vpfSpR9XGVg3AZD
+
+#Default Email Logo URL
+DEFAULT_EMAIL_LOGO=/assets/images/rise.png
+
+#Microservices
+INTEGRATION_MICROSERVICE_URL=https://staging23.risebuildings.com
+
+#Elastic API Key for high priority emails
+ELASTIC_API_KEY_HIGH=test
+
+#Google API Keys - GOOGLE_REDIRECT_URI field will be based on environment
+GOOGLE_CLIENT_ID="754275591394-sp4ucbe75i97j1l9mf65shstdqpbadtq.apps.googleusercontent.com"
+GOOGLE_REDIRECT_URI="https://staging23.risebuildings.com/api/properties/auth/google/callback"
+
+#HID SUBSCRIPTION - "HID_SUBSCRIPTION_APPLICATION_ID" to be updated after recieving from HID
+
+HID_SUBSCRIPTION_IDP_URL = https://idp.hidglobal.com/idp/SISDOMAIN/
+HID_SUBSCRIPTION_BASE_URI = https://cert.portal.origo.hidglobal.com/credential-management
+HID_SUBSCRIPTION_CONTENT_TYPE_MA = application/vnd.assaabloy.ma.credential-management-2.0+json
+HID_SUBSCRIPTION_CONTENT_TYPE_PR = application/vnd.assaabloy.data-2.1+json
+HID_SUBSCRIPTION_APPLICATION_VERSION = V2.2_R1
+HID_SUBSCRIPTION_APPLICATION_ID = ''
+
+# CCURE
+CCURE_RESIDENT_PAGE_SIZE=5
+
+#google Analytics 
+FIREBASE_PROJECT_ID=rise-living
+APP_ID=1:93576622797:web:1fb331ed9492d000
+MEASUREMENT_ID=G-4MSV9TFTX9
+
+# Yardi Residential Related Fields
+YARDI_RESIDENTIAL_PLATFORM=SQL Server
+YARDI_RESIDENTIAL_INTERFACE_ENTITY=Rise Buildings
+YARDI_RESIDENTIAL_INTERFACE_LICENSE=MIIBEAYJKwYBBAGCN1gDoIIBATCB/gYKKwYBBAGCN1gDAaCB7zCB7AIDAgABAgJoAQICAIAEAAQQ+Hwea2RLRKr07Sxxug67fQSByHTHiYFJ19EiXXPbRDiHgiwUX5MStxi/RDuW5K8sCBdkqM9FLl2rxN8gYCEnJklZ1Lz7kuiMqwNQHs62lGTob3GSIs23TpZwmjPKk/B6xhh943/v7r4TQUs8rziqDoD1/yhHzF8i6ylcOe6W+QvgLSYAbXFzhpxwkjRLmLzyRwfpcKRIapugmpQWcyFegiZ9bNr62f6ZeO0zVytDVTGmY0jE754VAER4z9QJhWlaxb1cU8g6fI3ZdD8gptbHlYhjKw4r6uP5t3Ql
+
+# Yardi Financial Related Fields
+YARDI_FINANCIAL_PLATFORM=SQL Server
+YARDI_FINANCIAL_INTERFACE_ENTITY=Rise Pay
+YARDI_FINANCIAL_INTERFACE_LICENSE=MIIBEAYJKwYBBAGCN1gDoIIBATCB/gYKKwYBBAGCN1gDAaCB7zCB7AIDAgABAgJoAQICAIAEAAQQL3MP1K+6/CQIFer2+sUF9ASByOMFFyBs3g5sQG7HlRh4EbDo84J9os5C9fxe8vsbmYJc5pcJwkkohWVGK05mFM8Mrz7VD7zXiC83TcbhOUoQSEOUGy1QDT56dsAsSOCI3SE2vZgdGprT+tNhaWAx/4Xeg3fGsaQvC9D0bPasMGw3SniGS5C1mH6Lz3Bkky9lKOcCiM/nONOlYVhuEj2sI0RVuCcu0evlBzUrDYCT8fyrKJJNG0L8XBhvAatTnc5r7Y0N/RK64xJqtsb03GONawWb6u2FU10YLpqF
+
+#OPENPATH
+OPEN_PATH_API_URL=https://api.openpath.com
+
+# TimeFrame to delete 'req-param' logs
+CLEAN_LOGS_AFTER_DAYS = 7
+A_ENV=sandbox
+DWOLLA_API_URL=https://api-sandbox.dwolla.com
+#DWOLLA_API_URL=https://api.dwolla.com
+#DWOLLA_ENV=production
+
+#Rise Support Email address for Device Health check alerts
+#SEND_EMAIL_ALERTS_TO=support@risebuildings.com
+
+#Dwolla Keys - Commented DWOLLA_API_URL and DWOLLA_ENV are for PROD
+DWOLLA_ENV=sandbox
+#DWOLLA_API_URL=https://api.dwolla.com
+#DWOLLA_ENV=production
+
+#POS
+POS_DEFAULT_USER_ID=5aa90a5130ff2dbb17beb90a
+
+#POS email
+#ELASTIC_API_URL=https://api.elasticemail.com/v2/email/send
+NO_REPLY_EMAIL=noreply@risebuildings.com
+APPLICATION_NAME=Rise Buildings
+NODEMAILER_HOST=smtp.ethereal.email
+NODEMAILER_PORT=587
+
+
+
+#Schlage Configuration
+SCHLAGE_WSS_URL=https://ec2-3-223-32-169.compute-1.amazonaws.com:8080
+SCHLAGE_ROOT_CA_SERVER_URL=http://ec2-3-223-32-169.compute-1.amazonaws.com:3000
+ENGAGE_USERNAME=info@risebuildings.com
+ENGAGE_PASSWORD=FdRW3Z3qsrLy2NNM
+ENGAGE_SITE_SOFTWARE_KEY=risebuildings
+ENGAGE_PARTNER_WEBSERVER_URL=https://partner.lockwebserv.com
+OEM_BASE_PATH=https://api.allegion.com
+INTEGRATION_ID=9a1adcdc-49db-ea11-af8c-0050f271977d
+SUBSCRIPTION_KEY_PRIMARY=fb37fbba27ab45b9a781851c04c00e1b
+SUBSCRIPTION_KEY_SECONDARY=0e44dc30fa54452c9b0359da5c90a4a9
+
+
+# Card number range. 0-100 for local, 101-200 for staging3, 201-300 for staging, 301-400 for preprod, 401-500 for dev, 1000-1048575 for production
+SCHLAGE_CARD_NUMBER_RANGE_BOTTOM=101
+SCHLAGE_CARD_NUMBER_RANGE_TOP=200
+
+LOGS_FILE_PATH=/home/ubuntu/efs/logs/
+
+
+#CVPS
+SERVICE_CALLER_ID=300
+CVPS_SERVER_URL=https://v3.cvpsapi.com/
+
+#DSX FIELDS
+#CRON_PUSH_VISITOR_DELAY_TIME in ms
+CRON_PUSH_VISITOR_DELAY_TIME=60000
+
+DELETED_USERS_LIMIT_TO_SEND_EMAIL=2
+
+#SALTO-SVN MOBILE KEY EXPIRATION DURATION=<no_of_days/hours><unit_of_expiration_in_days(d)_or_hours(h)>
+SALTO_SVN_MOBILE_KEY_EXPIRATION_DURATION=1h
+#To fetch max records from all Read APIs like (ACLs Groups and Doors Lists) of Salto SVN.
+SALTO_SVN_MAXIMUM_LIST_COUNT=1000
+
+
+# Cron execution related params
+RESET_WO_CRON_EXECUTION_AFTER_HOURS=12
+
+#Integration DB encryption key
+INTEGRATIONS_ENCRYPTION_KEY=vgjycftynujhukg6v
+
+#Pattern to check malicious request
+BLACKLISTED_PATTERN=^.*\$[a-zA-Z]+|(?:for|while|function|exit|eval|setTimeout|setInterval)[\s]*[(]
+
+EMAIL_ADOPTION_METRIC=adoptionmetrics@risebuildings.com
+
+# KASTLE FIELDS (username and password to be sent while registering on Kastle for Authentication)
+# KASTLE_HEART_BEAT_CRON_FREQUENCE is in mins
+KASTLE_WEBHOOK_USER_NAME=
+KASTLE_WEBHOOK_PASSWORD=
+KASTLE_HEART_BEAT_CRON_FREQUENCE=05
+
+#Field for sending token for user to fetch logs from Production
+#add email ids with a comma for multiple emails. eg: abc@mail.com,def@ail.com
+EMAILS_TO_SEND_ACCESS_TOKEN=kam@mail.com,vm@mail.com
+
+#Variable used to show dummy password on client side (PM Poprerty setting page)
+INTEGRATION_DUMMY_PASSWORD=********
+
+#Languages
+LOCALES = ["en-US", "fr-FR", "es-ES"]
+
+#CONTROL BY WEB CLOUD FIELDS
+CONTROL_BY_WEB_CLOUD_LOGIN_URL=https://api.controlbyweb.cloud/api/v1/auth/token
+CONTROL_BY_WEB_CLOUD_API_URL=https://api.controlbyweb.cloud/api/v1/accounts/2252521652/devices
+
+
+#Salesforce Fields
+SALESFORCE_URL_FOR_AUTHENTICATION=https://test.salesforce.com
+
+#Building Engines Fields
+BUILDING_ENGINES_TENX_INTEGRATOR_NAME=rise
+BUILDING_ENGINES_API_URL=https://pmapi.dev.core.beifederation.com
+
+# BE User ID, which will be used to close the WO in RISE
+BUILDING_ENGINES_USER_ID=5a7cad915e23410530972731
+
+# AWS S3 Credentials
+AWS_BUCKET_NAME=rise-staging-1
+AWS_BUCKET_REGION=us-east-2
+AWS_API_VERSION=2006-03-01
+
+FLOOR_DISPLAY_NAME_MAX_LENGTH=10
+SCHINDLER_APP_VERSION=21.07.102
+
+INTEGRATION_CRON_EXECUTION_DELAY=100
+
+#Auth0 Integration
+AUTH0_AUDIENCE=https://staging23.risebuildings.com/api
+AUTH0_DOMAIN=https://risebuildings-staging23.us.auth0.com
+AUTH0_CLIENT_ID=UNKIu4NSFwjvAJ3JgFRJrYRZMcdIHVvU
+AUTH0_JWKS_URI=https://risebuildings-staging23.us.auth0.com/.well-known/jwks.json
+
+
+# auth0 jwt algorithms will be a comma separated list
+AUTH0_JWT_ALGORITHMS=RS256
+
+GENEA_ACL_INTEGRATION_API_URL=https://api.stage-sequr.io/v2
+GENEA_ACL_API_PAGINATION_LIMIT=100
+
+#Blubox Integration Fields
+BLUBOX_API_URL=https://qa.blub0x.com
+BLUBOX_API_PAGINATION_LIMIT=100
+
+# Dynamic-Assets
+ASSETS_HOST_BASE_URL=https://assets-staging.risebuildings.com
+
+EMAIL_SUPPORT_INBOX=support@mail.com,test@support.com,manas@test.com
+# Dwolla Env variables
+DEDUPE_STRATEGY=post_dedupe_ttl
+DEDUPE_REDIS_KEY_TTL=20000
+DEDUPE_REDLOCK_TTL=6000
+DEDUPE_REDLOCK_RETRY_COUNT=5
+DEDUPE_REDLOCK_RETRY_DELAY=400
+DEDUPE_REDLOCK_DRIFT_FACTOR=0.01
+DEDUPE_REDLOCK_RETRY_JITTER=200
+
+# Cron Env variables
+RUN_AUTO_PAYMENT_CRON_HERE=false
+RUN_CRON_HERE=false
